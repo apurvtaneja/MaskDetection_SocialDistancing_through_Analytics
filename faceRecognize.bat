@@ -1,0 +1,1 @@
+wt.exe .\Scripts\python.exe pythonBatchFiles\faceRecognize.py

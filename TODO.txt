@@ -1,0 +1,30 @@
+TODO:
+0. CAMERA CANNOT BE ACCESSED AT THE SAME TIME BY 2 MODELS [VERY HARD][DONE]
+	- Sol: combine the detect file so they share frames from the camera.
+
+1. Single Run file(running 2 models and the dashboard) [EASY][DONE]
+	- Using multi threading???
+	- Load on system??
+
+2. Implementing Face Mask Detection. [HARD + COMPLICATED][DONE]
+	If face mask not detected 
+	- send it to the database that the violation has been committed. [EASY][DONE]
+	- after that check if the face can be recognized. [EASY][DONE]
+	- if face recognized - send the regno. to database. [EASY][DONE]
+	- optional: send email to email id of the student. [MEDIUM]
+
+3. Add widgets to visualize face mask violations [EASY]
+
+4. refresh dashboard on reload. [MEDIUM][DONE]
+
+5. create a easy way to capture facial images. [MEDIUM]
+
+6. Find a way to fetch the image from the detect model and send it for facial recognition. [VERY VERY HARD][DONE]
+
+7. Find how to determine class during inference.[MEDIUM][DONE]
+
+8. Find a way to not hit the database again and again during inference. [VERY VERY HARD][DONE]
+
+*. optional:
+	- create cv2 server [VERY HARD + COMPLICATED]
+	- feed the video stream of mask detection to the dashboard. [VERY HARD + COMPLICATED]
